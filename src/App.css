@@ -1,38 +1,209 @@
-.App {
-  text-align: center;
+*{
+  overflow-x: hidden;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.appcontainer{
+width: 100vw;
+height: auto;
+display: flex;
+align-items: center;
+justify-content: center;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.app{
+  max-width: 1350px;
+  width: 1350px;
+  height: auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Mainbanner{
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  max-width: 100%;
+background-size: cover;
+height: 350px;
+flex-direction: column;
+}
+.Mainbanner nav ul{
+  display: flex;
+  text-decoration: none;
+  list-style-type: none;
+  gap: 15px;
+  color: white;
+  font-weight: bold;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+height: auto;
+  max-width: 100%;
+}
+.profileimage{
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+  border-radius: 100%;
+}
+.searchfield{
+  width: 400px;
+  border: solid 3px white;
+  background-color: rgba(255, 255, 255, 0.487);
+  border-radius: 8px;
+  height: 25px;
+  padding-left: 15px;
+}
+.logo{
+max-height: 50px;
+}
+.branddetails{
+  height: auto;
+  transform: translateY(-80px);
+  padding: 5px 180px;
+  display: flex;
+}
+.brandlogo{
+  height: 150px;
+  min-width: 150px;
+  background-color: white;
+  border: solid 3px rgb(216, 216, 216);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.brandlogo img{
+  min-width: 100%;
+  height: 100%;
+}
+.datapart{
+  height: 50%;
+display: flex;
+padding: 0 15px;
+justify-content: space-between;
+color: white;
+color: rgba(255, 255, 255, 0);
+}
+.branddata{
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+.buttons button{
+  width: auto;
+  padding: 0px 35px;
+border-radius: 10px;
+border: solid 1px ;
+height: 30px;
+display: flex;
+align-items: center;
+justify-content: center;
+font-weight: bold;
+cursor: pointer;
+}
+.buttons{
+display: flex;
+align-content: center;
+justify-content: center;
+gap: 15px;
+margin-top: 20px;
+}
+
+.inforeviews{
+  padding: 5px 180px;
+  display: flex;
+  gap: 2%;
+}
+.infobox{
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+}
+.infocontainer{
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.infocontainertwo{
+  width: 55%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.infoitself{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.detaill{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
+  font-weight: 700;
+}
+.detailcontainer{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background-color: rgb(226, 226, 226);
+  padding: 5px 20px;
+  border-radius: 15px;
+padding: 20px 10px;
+}
+.infoword{
+  margin-left: 10px;
+border-left: solid 5px green;
+padding-left: 5px;
+font-weight: bold;
+}
+.infowordtwo{
+  margin-left: 10px;
+border-left: solid 5px green;
+padding-left: 5px;
+font-weight: bold;
+font-size: 25px;
+display: flex;
+justify-content: space-between;
+padding: 0 10px;
+}
+.infowordtwo select{
+padding: 5px 15px;
+display: flex;
+align-items: center;
+justify-content: center;
+border-radius: 10px;
+background-color: #00b600 ;
+color: white;
+font-weight: bold;
+border: none;
+}
+.container {
+  width: 80%; 
+  background-color: #989898; 
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.App-link {
-  color: #61dafb;
+.skills {
+  text-align: right;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white; 
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.five{width: 80%;background-color: rgb(0, 179, 0);}
+.four{width: 60%;background-color: rgb(0, 179, 0);}
+.three{width: 75%;background-color: rgb(0, 179, 0);}
+.two{width: 15%;background-color: rgb(0, 179, 0);}
+.one{width: 30%;background-color: rgb(0, 179, 0);}
+.review{
+  width: 100%;
+  height: auto;
+  background-color: #e2e2e2;
+  border-radius: 2%;
 }
