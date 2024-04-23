@@ -5,14 +5,11 @@ import Restaurantlocation from './Restaurantlocation.js'
 import Youmighalsoconisder from './youmighalsoconisder.js'
 export default function nfocontainer() {
   return (
-    <>
-
 <div className='infocontainer'>
 <Restaurantinfo />
 <Restaurantratings />
 <Restaurantlocation />
 <Youmighalsoconisder />
 </div>
-</>
   )
 }

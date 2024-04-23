@@ -10,15 +10,21 @@ import Navbar from './components/Navbar';
 import Branddetails from './components/branddetails';
 import Infocontainer from './components/infocontainer';
 import Reviewscontainer from './components/reviewscontainer';
-import Restaurantprofile from './Restaurant-profile';
-import Profile from './profile';
-import Reviewpage from './reviewpage';
-function App() {
-  return (
-    <>
-<Reviewpage />
-</>
-  );
-}
+import React from 'react';
 
-export default App;
+export default function Restaurantprofile() {
+  return (
+<div className='appcontainer'>
+  <div className='app'>
+  <div className='Mainbanner' style={{backgroundImage: `url(${bannerbackground})`}}>
+<Navbar />
+</div>
+  <Branddetails />
+<div className='inforeviews'>
+      <Infocontainer />
+      <Reviewscontainer />
+</div>
+</div>
+</div>
+  )
+}
